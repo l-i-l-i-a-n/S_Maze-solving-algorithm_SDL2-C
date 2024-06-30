@@ -1,0 +1,34 @@
+FIC = $(shell ls *.c) 
+EXEC = ../bin/
+BIN = labyrinthe
+DEBUG = -DDEBUG 
+<<<<<<< HEAD:partition_labyrinthes/src/Makefile
+LFLAGS = -lSDL2 -lSDL2_image `pkg-config libgvc --cflags` -g -O2 -lcgraph -lgvc
+=======
+LFLAGS = -lSDL2 -lSDL2_image -lSDL2_ttf -lm
+>>>>>>> parcours:parcours/src/Makefile
+OPTIONS = -Wall -Wextra -g 
+CC = gcc 
+OBJ = $(FIC:.c=.o) 
+ART = $(FIC:.c=.gch) 
+
+all: $(BIN) 
+
+debug: OPTIONS += $(DEBUG) 
+debug: clean 
+debug: $(BIN) 
+
+$(BIN): $(OBJ) $(EXEC) 
+	$(CC) -o $(EXEC)$(BIN) $(OBJ) $(OPTIONS) $(LFLAGS) 
+
+$(EXEC):
+	mkdir $(EXEC) 
+	
+%.o: %.c 	
+	$(CC) -c -o $@ $< $(OPTIONS) $(LFLAGS) 
+	
+remake: clean 	
+	make 
+
+clean: 	
+	rm -f $(OBJ) $(ART)

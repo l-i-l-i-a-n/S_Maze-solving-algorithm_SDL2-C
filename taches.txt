@@ -1,0 +1,104 @@
+creer git
+
+creer site-rapport
+le tenir a jour
+	-qui fait quoi quand
+	-prévisionnel & révisé (réel)
+
+utiliser un makefile
+
+documenter le code (doxygen)
+
+utiliser listes, tableaux, graphes, arbres, tas, partitions
+
+faire une interface graphique en SDL2 gerant :
+Créer une image par juxtaposition et superposition d'autres images,
+Gérer la transparence dans la superposition de deux images,
+Créer une animation simple,
+Gérer une boucle d'évènements,
+Gérer les entrées utilisateur.
+
+outil : graphviz pour les graphes
+
+
+implémenter en SDL :
+-jeu de la vie
+	rajouter extension maze
+	
+-space numbers (interactions avec l'utilisateur) (= minijeu)
+
+-file de priorité 
+	tas binaire ou binomial ou fibonacci
+	tri par tas
+	
+-Type de donnée partition, composantes connexes :
+	création d'un labyrinthe arborescent
+	extension creation d'un labyrinthe
+	
+-plus court chemin
+	-laby connu
+		Dijkstra
+		A*
+	-inconnu
+		minimiser cout des deplacements
+		
+-extensions
+	-monstres
+		appartition
+		comportement monstre
+		comportement joueur
+	-positionnement optimal de ressources
+	-2 joueurs en tour par tour
+		rajouter un mur a chaque tour
+
+!prendre des ressources libres de droit!
+
+jeudi semaine 1 :
+suivre la feuille jusqu'au point 5 inclus
+exemples pas optimaux, les modifier
+exo obligatoires
+on peut prendre des libertes, mais check avec prof
+
+jeudi semaine 2 :
+projet libre parmi les sujets
+
+construire un labyrinthe avec méthode imposée
+explorer le labyrinthe (sans le connaitre) (parcours profondeur)
+trouver le plus court chemin apres exploration complete du labyrinthe
+
+
+
+SDL:
+	X fenetré
+	pavé de serpent
+	jeu de la vie
+	premiere animation
+	jeu de la vie 2 (avec interactions)
+	chef d'oeuvre + (space numbers) (1j max) (=minijeu)
+	
+Tas binaire:
+	module à faire
+	
+Partition arborescente avec graphviz:
+	module
+		créer
+		récupérer_classe
+		fusion
+		lister_classe
+		lister_partition
+	Calcul des composantes connexes
+	Kruskal
+	labyrinthe arborescent
+	labyrinthe non arborescent
+
+Parcours de graphe:
+	Dijkstra
+	A*
+	Profondeur
+	
+
+
+
+
+
+
